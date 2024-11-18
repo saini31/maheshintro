@@ -9,10 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
   </head>
 
-  <body>
+  <body style="overflow-x: hidden;">
     <header class="header">
       <nav class="navbar">
         <h1 class="logo">Mahesh Saini</h1>
@@ -26,7 +27,15 @@
       </nav>
     </header>
 
-    <section id="about" class="section about">
+    <section id="about" class="section about" style="position: relative;">
+      <!-- <div class="animated-code-container">
+        <div class="code-snippet">{ } < / ></div>
+        <div class="code-snippet">System.out.println("Mahesh Saini")</div>
+        <div class="code-snippet">if(true) { return; }</div>
+        <div class="code-snippet">console.log("Hello World!");</div>
+        <div class="code-snippet">function() => {}</div>
+        <div class="code-snippet">class BackendDev { }</div>
+      </div> -->
       <div class="about-content">
         <h2>About Me</h2>
         <h3>Hi, I'm Mahesh Saini</h3>
@@ -43,15 +52,8 @@
           alt="Mahesh Saini"
         />
       </div>
-      <div class="animated-code-container">
-        <div class="code-snippet">{ } < / ></div>
-        <div class="code-snippet">System.out.println("Mahesh Saini")</div>
-        <div class="code-snippet">if(true) { return; }</div>
-        <div class="code-snippet">console.log("Hello World!");</div>
-        <div class="code-snippet">function() => {}</div>
-        <div class="code-snippet">class BackendDev { }</div>
-      </div>
-      <li>
+      
+      <li style="list-style: none;">
         <a
           href="https://drive.google.com/file/d/1pqT7W8NSIsJftGx1XKoZyYkVgr99pR-G/view?usp=drive_link"
           class="download-btn"
@@ -61,7 +63,7 @@
       </li>
     </section>
 
-    <section id="journey" class="section journey">
+    <section id="journey" class="section journey"  style="position: relative;">
       <h2>My Journey</h2>
       <div class="journey-container">
         <!-- Education Section -->
@@ -77,18 +79,18 @@
             <p>Data Structures and Algorithms, Problem Solving</p>
             <span class="date">Jul 2023 - Jan 2024</span>
           </div>
-          <div class="animated-code-container">
+          <!-- <div class="animated-code-container">
             <div class="code-snippet">{ } < / ></div>
             <div class="code-snippet">System.out.println("Mahesh Saini")</div>
             <div class="code-snippet">if(true) { return; }</div>
             <div class="code-snippet">console.log("Hello World!");</div>
             <div class="code-snippet">function() => {}</div>
             <div class="code-snippet">class BackendDev { }</div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Experience Section -->
-        <div class="journey-item">
+        <div class="journey-item"  style="position: relative;">
           <h3>Experience</h3>
           <div class="experience-item">
             <h4>Synilogic Tech Pvt. Ltd., Kota Rajasthan</h4>
@@ -104,14 +106,14 @@
             <p>Web development training</p>
             <span class="date">Jun 2022 - Oct 2022</span>
           </div>
-          <div class="animated-code-container">
+          <!-- <div class="animated-code-container">
             <div class="code-snippet">{ } < / ></div>
             <div class="code-snippet">System.out.println("Mahesh Saini")</div>
             <div class="code-snippet">if(true) { return; }</div>
             <div class="code-snippet">console.log("Hello World!");</div>
             <div class="code-snippet">function() => {}</div>
             <div class="code-snippet">class BackendDev { }</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -282,7 +284,6 @@
       <p>© 2024 My Portfolio | All Rights Reserved</p>
     </footer>
 
-   
     <script>
       // Initialize EmailJS with your public User ID
       (function () {
@@ -784,25 +785,25 @@
 
   .code-snippet:nth-child(2) {
     top: 40%;
-    left: 30%;
+    left: 15%;
     animation-delay: 2s;
   }
 
   .code-snippet:nth-child(3) {
     top: 60%;
-    left: 50%;
+    left: 20%;
     animation-delay: 4s;
   }
 
   .code-snippet:nth-child(4) {
     top: 30%;
-    left: 70%;
+    left: 25%;
     animation-delay: 6s;
   }
 
   .code-snippet:nth-child(5) {
     top: 50%;
-    left: 80%;
+    /* left: 80%; */
     animation-delay: 8s;
   }
   /* Journey Section */
@@ -978,4 +979,9 @@
     animation: shadowPulse 1.5s infinite ease-in-out; /* Infinite loop for shadow pulse */
     transform: none; /* Keep the size constant */
   }
+  @media screen and (max-width: 780px) {
+ .about{
+  flex-direction: column !important;
+ }
+}
 </style>
